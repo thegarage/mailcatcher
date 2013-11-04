@@ -1,7 +1,8 @@
 #!upstart
 description "Mailcatcher SMTP dev tool"
 
-start on startup
-stop on shutdown
+start on started
 
-exec mailcatcher --http-ip="<%= node['mailcatcher']['http_ip'] %>"
+script
+  exec /opt/vagrant_ruby/bin/mailcatcher --http-ip="0.0.0.0"
+end script

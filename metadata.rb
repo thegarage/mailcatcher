@@ -3,7 +3,7 @@ maintainer       "Andrew Fecheyr"
 maintainer_email "andrew@bedesign.be"
 license          "MIT"
 description      "Installs Mailcatcher"
-long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
+long_description "Installs Mailcatcher app and creates upstart config form daemonizing"
 version          "0.1.0"
 depends          "build-essential"
 supports         "ubuntu"

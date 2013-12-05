@@ -4,5 +4,5 @@ description "Mailcatcher SMTP dev tool"
 start on started
 
 script
-  exec /opt/vagrant_ruby/bin/mailcatcher --http-ip="0.0.0.0"
+  exec /opt/vagrant_ruby/bin/mailcatcher --http-ip="<%= node['mailcatcher']['http_ip'] %>" --smtp-ip="<%= node['mailcatcher']['smtp_ip'] %>"
 end script
